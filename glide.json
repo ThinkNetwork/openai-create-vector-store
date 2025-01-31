@@ -1,9 +1,8 @@
-
 [
   {
     "kind": "column",
-    "name": "OpenAI (Assistants)",
-    "description": "Create, modify and run OpenAI Assistants.",
+    "name": "Create OpenAI Vector Store",
+    "description": "Create a new vector store in OpenAI's API with optional expiration, chunking strategy, and metadata.",
     "author": "Gavin Horne <gavin@thinknetwork.com.au>",
     "params": [
       {
@@ -12,18 +11,28 @@
         "type": "string"
       },
       {
-        "name": "endpoint",
-        "displayName": "API Endpoint (Required)",
+        "name": "file_ids",
+        "displayName": "File IDs (JSON format, Optional)",
         "type": "string"
       },
       {
-        "name": "body",
-        "displayName": "Body (JSON Schema Required)",
+        "name": "name",
+        "displayName": "Vector Store Name (Optional)",
         "type": "string"
       },
       {
-        "name": "json",
-        "displayName": "JSON Schema (Output)",
+        "name": "expires_after",
+        "displayName": "Expires After (JSON format, Optional)",
+        "type": "string"
+      },
+      {
+        "name": "chunking_strategy",
+        "displayName": "Chunking Strategy (JSON format, Optional)",
+        "type": "string"
+      },
+      {
+        "name": "metadata",
+        "displayName": "Metadata (JSON format, Optional)",
         "type": "string"
       }
     ],
